@@ -1,0 +1,23 @@
+header {
+	background-color:#b76e79;
+	font-family:verdana;
+	font-weight:bold;
+	color:white;
+	text-shadow: 0px 1px #a9a9a9,
+	 1px 0px #a9a9a9,
+	 0px -1px #a9a9a9,
+	 -1px 0px #a9a9a9;	
+	 height:70px;
+}
+
+.navigation-block {
+	margin:8px;
+	float:right;
+}
+
+
+.nav-btn{
+	font-family:verdana;
+	font-weight:bold;
+	margin:10px;
+}
