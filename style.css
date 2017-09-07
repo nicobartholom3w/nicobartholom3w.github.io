@@ -60,6 +60,7 @@ body {
 	font-family:helvetica;
 	text-align:left;
 	margin: 15% 20px 15% 20px;
+	color:white;
 
 
 }
@@ -84,27 +85,52 @@ body {
 	text-align: center;
 }
 
+h1{
+	font-family: georgia;
+	color: white;
+	margin:75px;
+	font-weight: bold;
+	text-shadow: 0px 1px #2f4f4f,
+	 1px 0px #2f4f4f,
+	 0px -1px #2f4f4f,
+	 -1px 0px #2f4f4f;	
+}
 
 .portfolio-img {
 	width:100%;
-
+	border-radius: 10%;
 
 }
 
 table {
 	display: block;
 	background-color: white;
-	border:3px solid black;
-	margin:0 auto;
+	border:3px solid #2f4f4f;
+	margin:50px auto;
+	border-collapse: separate;
+	border-spacing: 10px 10px;
+	border-radius: 5%;
+
 	
 }
 
 td {
-	height:30%;
-	width:30%;
+	height:25%;
+	width:25%;
 	background-color: #2f4f4f;
-	border:3px solid black;
-	
+	border:10px solid transparent;
+	border-radius: 10%;
+}
+
+#contact {
+	background-color: #6E79B7;
+	width:95%;
+	border:solid #2f4f4f;
+	height:auto;
+	overflow: auto;
+	color:white;
+
+
 }
 
 
