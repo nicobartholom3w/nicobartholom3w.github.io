@@ -55,6 +55,18 @@ body {
 	color:#b76e79;
 }
 
+#about-btn {
+
+}
+
+#portfolio-btn {
+
+}
+
+#contact-btn {
+	
+}
+
 #hello {
 	margin:13% 0% 7% 3%;
 }
@@ -204,6 +216,18 @@ ul {
 	font-weight: bold;
 }
 
+#email {
+	float:left;
+	font-family: helvetica;
+	font-size:120%;
+	margin:3%;
+
+}
+
+a {
+	color: white;
+	font-style: italic;
+}
 
 
 
