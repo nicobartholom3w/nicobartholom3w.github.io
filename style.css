@@ -11,6 +11,14 @@ header {
 	 position:fixed;
 	 overflow:auto;
 }
+
+navigation-block.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    margin-top:12px;
+}
+
 #name {
 	float: left;
 	margin:2% 2% 1% 2%;
@@ -24,11 +32,14 @@ body {
 	background-color: #B7886E;
 }
 
-.navigation-block {
+#navigation-block {
 	margin:8px;
 	float:right;
 }
 
+#navigation-block a {
+
+}
 
 .nav-btn{
 	font-family:georgia;
@@ -50,10 +61,11 @@ body {
 	color:#b76e79;
 }
 
-.nav-btn:focus {
+.active {
 	background-color:white;
 	color:#b76e79;
 }
+
 
 #about-btn {
 
@@ -221,6 +233,10 @@ ul {
 	font-family: helvetica;
 	font-size:120%;
 	margin:3%;
+
+}
+
+.sections {
 
 }
 

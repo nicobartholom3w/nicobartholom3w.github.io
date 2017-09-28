@@ -10,6 +10,8 @@
 	<script>
   	$(document).ready(function(){
   		$("#about-btn").click(function() {
+  			$(".nav-btn").removeClass("active")
+  			$("#about-btn").addClass("active");
   			$('html, body').animate({
   				scrollTop: $("#about").offset().top
   			}, 2000	);
@@ -17,6 +19,8 @@
 	});
 	$(document).ready(function(){
   		$("#portfolio-btn").click(function() {
+  			$(".nav-btn").removeClass("active")
+  			$("#portfolio-btn").addClass("active");
   			$('html, body').animate({
   				scrollTop: $("#portfolio").offset().top
   			}, 2000	);
@@ -24,24 +28,64 @@
 	});
 	$(document).ready(function(){
   		$("#contact-btn").click(function() {
+  			$(".nav-btn").removeClass("active")
+  			$("#contact-btn").addClass("active");
   			$('html, body').animate({
   				scrollTop: $("#contact").offset().top
   			}, 2000	);
   		})
 	});
 	</script>
+	<!--<script>
+	$(document).ready(function() {
+		$(window).on("scroll", function() {
+		$(".nav-btn").each(function(){
+			if($(window).scrollTop() >= $(this).offset().top) {
+				var id = $(this).attr("id")
+				$("#navigation-block a").removeClass("active");
+				$("#navigation-block a[href=#" + id + "]").addClass("active");
+			}
+		});		
+	})
+	});
+	</script>-->
+	<script>
+	$(document).ready(function() {
+		var window_top =$(window).scrollTop() + 12;
+		var div_top = $("#navigation-block").offset().top;
+			if (window_top > div_top) {
+				$("navigation-block").addClass("stick, active");
+			} else {
+				$("navigation-block").removeClass("stick, active");
+			}
+
+		});
+
+
+
+
+
+	$(document).ready(function() {
+		$("#navigation-block a").click(function(evn){
+			evn.preventDefault();
+			$("html, body").scrollTo(this.hash, this.hash);
+		});
+	});
+	</script>
+	
 </head>
 <body>
 	<header class="container-fluid name">
 	<h3 id="name"><div class="nico">ニコ</div>　Nico Bartholomew</h3>
-	<div class="navigation-block">
-		<button type="submit" id="about-btn" class="btn btn-responsive nav-btn ">About</button>
-		<button type="submit" id="portfolio-btn" class="btn nav-btn ">Portfolio</button>
-		<button type="submit" id="contact-btn" class="btn nav-btn">Contact</button>
+
+	<div id="navigation-block">
+		<a href="#about"><button type="submit" id="about-btn" class="btn btn-responsive nav-btn active ">About</button></a>
+		<a href="#portfolio"><button type="submit" id="portfolio-btn" class="btn nav-btn ">Portfolio</button></a>
+		<a href="#contact"><button type="submit" id="contact-btn" class="btn nav-btn">Contact</button></a>
 	</div>
 	</header>
 	
-	<div id="about" class="container-fluid">
+	<div id="about" class="container-fluid sections">
 			
 			<img class="about-pic" src="http://res.cloudinary.com/nicobartholom3w/image/upload/v1504485665/nicob_uamkli.jpg">
 			<h2 id="hello">私について</h2>
@@ -49,7 +93,7 @@
 				This is the part where I talk about myself and my job titles I like to go by. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit consequuntur perspiciatis minus natus, quo! Quidem odit, recusandae incidunt blanditiis facilis repellat numquam reiciendis! Maiores dolores non, a maxime excepturi reprehenderit.
 			</p>
 	</div>
-	<div id="portfolio" class="container-fluid">
+	<div id="portfolio" class="container-fluid sections">
 	<h1>Portfolio</h1>
 	<table>
 		<tr>
@@ -64,7 +108,8 @@
 		</tr>
 	</table>
 	</div>
-	<div id="contact" class="container-fluid">
+
+	<div id="contact" class="container-fluid sections">
 	<h1>Contact</h1>
 	<div class="social-media">
 		<div id="c-software">
