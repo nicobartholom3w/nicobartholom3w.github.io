@@ -7,34 +7,35 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
 	<script>
-  	$(document).ready(function(){
-  		$("#about-btn").click(function() {
-  			$(".nav-btn").removeClass("active")
-  			$("#about-btn").addClass("active");
-  			$('html, body').animate({
-  				scrollTop: $("#about").offset().top
-  			}, 2000	);
-  		})
-	});
-	$(document).ready(function(){
-  		$("#portfolio-btn").click(function() {
-  			$(".nav-btn").removeClass("active")
-  			$("#portfolio-btn").addClass("active");
-  			$('html, body').animate({
-  				scrollTop: $("#portfolio").offset().top
-  			}, 2000	);
-  		})
-	});
-	$(document).ready(function(){
-  		$("#contact-btn").click(function() {
-  			$(".nav-btn").removeClass("active")
-  			$("#contact-btn").addClass("active");
-  			$('html, body').animate({
-  				scrollTop: $("#contact").offset().top
-  			}, 2000	);
-  		})
-	});
+ //  	$(document).ready(function(){
+ //  		$("#about-btn").click(function() {
+ //  			$(".nav-btn").removeClass("active")
+ //  			$("#about-btn").addClass("active");
+ //  			$('html, body').animate({
+ //  				scrollTop: $("#about").offset().top
+ //  			}, 2000	);
+ //  		})
+	// });
+	// $(document).ready(function(){
+ //  		$("#portfolio-btn").click(function() {
+ //  			$(".nav-btn").removeClass("active")
+ //  			$("#portfolio-btn").addClass("active");
+ //  			$('html, body').animate({
+ //  				scrollTop: $("#portfolio").offset().top
+ //  			}, 2000	);
+ //  		})
+	// });
+	// $(document).ready(function(){
+ //  		$("#contact-btn").click(function() {
+ //  			$(".nav-btn").removeClass("active")
+ //  			$("#contact-btn").addClass("active");
+ //  			$('html, body').animate({
+ //  				scrollTop: $("#contact").offset().top
+ //  			}, 2000	);
+ //  		})
+	// });
 	</script>
 	<!--<script>
 	$(document).ready(function() {
@@ -50,28 +51,29 @@
 	});
 	</script>-->
 	<script>
-	$(document).ready(function() {
-		var window_top =$(window).scrollTop() + 12;
-		var div_top = $("#navigation-block").offset().top;
-			if (window_top > div_top) {
-				$("navigation-block").addClass("stick, active");
-			} else {
-				$("navigation-block").removeClass("stick, active");
-			}
+	// $(document).ready(function() {
+	// 	var window_top =$(window).scrollTop() + 12;
+	// 	var div_top = $("#navigation-block").offset().top;
+	// 		if (window_top > div_top) {
+	// 			$("navigation-block").addClass("stick, active");
+	// 		} else {
+	// 			$("navigation-block").removeClass("stick, active");
+	// 		}
 
-		});
+	// 	});
 
-
-
-
-
-	$(document).ready(function() {
-		$("#navigation-block a").click(function(evn){
-			evn.preventDefault();
-			$("html, body").scrollTo(this.hash, this.hash);
-		});
-	});
+	// $(document).ready(function() {
+	// 	$("#navigation-block a").click(function(evn){
+	// 		evn.preventDefault();
+	// 		$("html, body").scrollTo(this.hash, this.hash);
+	// 	});
+	// });
 	</script>
+	<script>
+	// $(document).ready(function(){
+		
+	// }
+	</script> 
 	
 </head>
 <body>
@@ -90,7 +92,7 @@
 			<img class="about-pic" src="http://res.cloudinary.com/nicobartholom3w/image/upload/v1504485665/nicob_uamkli.jpg">
 			<h2 id="hello">私について</h2>
 			<p class="about-p">
-				This is the part where I talk about myself and my job titles I like to go by. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit consequuntur perspiciatis minus natus, quo! Quidem odit, recusandae incidunt blanditiis facilis repellat numquam reiciendis! Maiores dolores non, a maxime excepturi reprehenderit.
+				Hi! This is my first attempt at a personal portfolio website via FreeCodeCamp! I'm an artist and software engineer, please take a look around!
 			</p>
 	</div>
 	<div id="portfolio" class="container-fluid sections">
